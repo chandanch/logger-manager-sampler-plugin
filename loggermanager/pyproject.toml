@@ -1,0 +1,15 @@
+# loggermanager/pyproject.toml
+[tool.poetry]
+name = "loggermanager"
+version = "0.1.0"
+description = "A logging manager abstraction layer for various logging providers."
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+uuid = "^1.30"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

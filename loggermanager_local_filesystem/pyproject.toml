@@ -1,0 +1,18 @@
+# loggermanager_local_filesystem/pyproject.toml
+[tool.poetry]
+name = "loggermanager_local_filesystem"
+version = "0.1.0"
+description = "Local filesystem logging plugin for loggermanager."
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+loggermanager = ">=0.1.0"
+
+[tool.poetry.plugins."loggermanager.providers"]
+local_filesystem = "loggermanager_local_filesystem.local_filesystem_logger:LocalFileSystemLogger"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
